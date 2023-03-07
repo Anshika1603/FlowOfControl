@@ -7,19 +7,30 @@ import java.util.Scanner;
 public class StudentPercentage {
 
     static void DisplayGrade(int percentage){
-        if(percentage<100 && percentage>=90)
+        if(percentage<=100)
         {
-            System.out.println(" A Grade");
-        } else if (percentage<90 && percentage>=80) {
-            System.out.println("B Grade");
-        } else if (percentage<80 && percentage>=70) {
-            System.out.println("C Grade");
-        } else if (percentage<70 && percentage>=60) {
-            System.out.println("D Grade");
-        } else if (percentage<60 && percentage>=50) {
-            System.out.println("E Grade");
-        } else {
-            System.out.println("Fail");
+            if(percentage<100 && percentage>=90)
+            {
+                System.out.println("A Grade");
+            }
+            if (percentage<90 && percentage>=80) {
+                System.out.println("B Grade");
+            }
+            if (percentage<80 && percentage>=70) {
+                System.out.println("C Grade");
+            }
+            if (percentage<70 && percentage>=60) {
+                System.out.println("D Grade");
+            }
+            if (percentage<60 && percentage>=50) {
+                System.out.println("E Grade");
+            }
+            if (percentage<50) {
+                System.out.println("Fail");
+            }
+        }
+        else{
+            System.out.println("Invalid Input");
         }
     }
 
